@@ -4,7 +4,6 @@ import Modal from 'react-bootstrap/Modal';
 
 function VideoTrailer() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -13,7 +12,6 @@ function VideoTrailer() {
       <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
-
       <Modal size='lg' centered show={show} onHide={handleClose}>
         <Modal.Body className='p-0'>
             <div class="ratio ratio-16x9">
