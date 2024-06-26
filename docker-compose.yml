@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nextjs-deploy:
+    container_name: nextjs-deploy
+    build:
+      context: .
+      dockerfile: Dockerfile  # Make sure to rename your Dockerfile to this or adjust the name here
+    restart: always  
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=production
